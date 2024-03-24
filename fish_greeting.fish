@@ -3,15 +3,15 @@ function fish_greeting
   set greetTime ""
   set color magenta
 
-  if test $hour -gt 6
+  if test $hour -ge 6
     and test $hour -lt 12
     set color yellow
     set greetTime "morning"
-  else if test $hour -gt 12
+  else if test $hour -ge 12
     and test $hour -lt 17
     set color green
     set greetTime "afternoon"
-  else if test $hour -gt 17
+  else if test $hour -ge 17
     and test $hour -lt 20
     set color blue
     set greetTime "evening"
